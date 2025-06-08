@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		732A496794F8D8C92B15F630 /* Pods_SchoolBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5622668454386F3E51231D /* Pods_SchoolBeacon.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		32443E5D3101BCA5834CD8ED /* Pods-SchoolBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolBeacon.debug.xcconfig"; path = "Target Support Files/Pods-SchoolBeacon/Pods-SchoolBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8F5645516A88179025E663 /* Pods-SchoolBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolBeacon.release.xcconfig"; path = "Target Support Files/Pods-SchoolBeacon/Pods-SchoolBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		5A5622668454386F3E51231D /* Pods_SchoolBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31F8DDE2DF57E6B000A1DEF /* SchoolBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A3199C722DF5868F004A44DA /* Exceptions for "SchoolBeacon" folder in "SchoolBeacon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = A31F8DDD2DF57E6B000A1DEF /* SchoolBeacon */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A31F8DE02DF57E6B000A1DEF /* SchoolBeacon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A3199C722DF5868F004A44DA /* Exceptions for "SchoolBeacon" folder in "SchoolBeacon" target */,
+			);
 			path = SchoolBeacon;
 			sourceTree = "<group>";
 		};
@@ -23,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732A496794F8D8C92B15F630 /* Pods_SchoolBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A80DC85CDA35AAA6F6C1639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A5622668454386F3E51231D /* Pods_SchoolBeacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		524DE490F6D3EF63A7606F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32443E5D3101BCA5834CD8ED /* Pods-SchoolBeacon.debug.xcconfig */,
+				4B8F5645516A88179025E663 /* Pods-SchoolBeacon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A31F8DD52DF57E6B000A1DEF = {
 			isa = PBXGroup;
 			children = (
 				A31F8DE02DF57E6B000A1DEF /* SchoolBeacon */,
 				A31F8DDF2DF57E6B000A1DEF /* Products */,
+				524DE490F6D3EF63A7606F08 /* Pods */,
+				3A80DC85CDA35AAA6F6C1639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A31F8DEC2DF57E6E000A1DEF /* Build configuration list for PBXNativeTarget "SchoolBeacon" */;
 			buildPhases = (
+				1614DD9FC9E12C9487ABDFF4 /* [CP] Check Pods Manifest.lock */,
 				A31F8DDA2DF57E6B000A1DEF /* Sources */,
 				A31F8DDB2DF57E6B000A1DEF /* Frameworks */,
 				A31F8DDC2DF57E6B000A1DEF /* Resources */,
+				E9AA7B1E2798AC27F1089E28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +106,6 @@
 				A31F8DE02DF57E6B000A1DEF /* SchoolBeacon */,
 			);
 			name = SchoolBeacon;
-			packageProductDependencies = (
-			);
 			productName = SchoolBeacon;
 			productReference = A31F8DDE2DF57E6B000A1DEF /* SchoolBeacon.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +153,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1614DD9FC9E12C9487ABDFF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SchoolBeacon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AA7B1E2798AC27F1089E28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SchoolBeacon/Pods-SchoolBeacon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SchoolBeacon/Pods-SchoolBeacon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SchoolBeacon/Pods-SchoolBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A31F8DDA2DF57E6B000A1DEF /* Sources */ = {
@@ -246,6 +328,7 @@
 		};
 		A31F8DED2DF57E6E000A1DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32443E5D3101BCA5834CD8ED /* Pods-SchoolBeacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,7 +337,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SchoolBeacon/Preview Content\"";
 				DEVELOPMENT_TEAM = NU35GM8TLX;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "School Beacon";
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to turn this one inorder to use AR function";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "You need to turn this one inorder to use AR function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -275,6 +362,7 @@
 		};
 		A31F8DEE2DF57E6E000A1DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8F5645516A88179025E663 /* Pods-SchoolBeacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,7 +371,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SchoolBeacon/Preview Content\"";
 				DEVELOPMENT_TEAM = NU35GM8TLX;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "School Beacon";
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to turn this one inorder to use AR function";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "You need to turn this one inorder to use AR function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
