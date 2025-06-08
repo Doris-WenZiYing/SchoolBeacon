@@ -1,0 +1,35 @@
+[
+    {
+        "name": "行政大樓",
+        "image": "Administration_Building",
+        "latitude": 24.178606171449154,
+        "longitude": 120.6470291158826,
+        "altitude": 100,
+        "description": "行政大樓簡介",
+    },
+    {
+        "name": "榕樹附近",
+        "image": "grass",
+        "latitude": 24.17884628774874,
+        "longitude": 120.64696005660221,
+        "altitude": 0,
+        "description": "榕樹附近",
+    },
+    {
+        "name": "社辦門口",
+        "image": "iOS_Club",
+        "latitude": 24.179805150308056,
+        "longitude": 120.64995808785268,
+        "altitude": -10,
+        "description": "社辦門口的社旗底下",
+    },
+    {
+        "name": "草叢裡",
+        "image": "bush",
+        "latitude": 24.17942832959484,
+        "longitude": 120.64891739085233,
+        "altitude": 0,
+        "description": "草叢裡",
+    }
+]
+
