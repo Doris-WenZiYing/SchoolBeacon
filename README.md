@@ -151,7 +151,7 @@ _As the president of iOS Club, I:_
 
 ## Contact
 
-**Doris Wen** (Junior iOS Developer)
+**Doris Wen** (iOS Developer)
 - ✉️ [doris070714@gmail.com](mailto:doris070714@gmail.com)
 - Instagram: [dolores_dione](https://www.instagram.com/dolores_dione/)
 - Feng Chia University Tech Office
